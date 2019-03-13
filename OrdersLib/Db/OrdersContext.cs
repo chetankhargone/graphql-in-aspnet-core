@@ -8,7 +8,7 @@ namespace OrdersLib.Db
 {
     public class OrdersContext : DbContext
     {
-        private const string _dbConnection = "Data Source = 10.10.10.125; Initial Catalog = graphql-dev;Persist Security Info=True;User ID = sa;Password=Pass2018;Encrypt=False";
+        
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(_dbConnection);
